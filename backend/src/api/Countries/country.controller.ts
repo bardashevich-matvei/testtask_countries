@@ -15,7 +15,7 @@ import { CountryService } from './country.service';
 import CountryRequestDto from '@libs/dtos/Country/country-request.dto';
 import CountryResponseDto from '@libs/dtos/Country/country-response.dto';
 
-@Controller('countrys')
+@Controller('countries')
 @UseInterceptors(ClassSerializerInterceptor)
 @SerializeOptions({ excludeExtraneousValues: true })
 export class CountryController {

@@ -9,7 +9,7 @@ import { CommandModule } from 'nestjs-command';
 
 @Module({
 	imports: [CommandModule, MongooseModule.forFeature([{ name: Country.name, schema: CountrySchema }])],
-	controllers: [CountryController, CountrySeed],
+	controllers: [CountryController],
 	providers: [CountryService, CountryRepository, CountrySeed],
 })
 export class CountryModule { }
