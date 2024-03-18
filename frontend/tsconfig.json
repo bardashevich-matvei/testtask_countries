@@ -10,6 +10,7 @@
 	"rootDirs": ["libs"],
     "moduleResolution": "node",
     "resolveJsonModule": true,
+	"strictPropertyInitialization": false,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,

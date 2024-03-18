@@ -3,12 +3,14 @@ import { IsString, IsOptional, IsBoolean } from 'class-validator';
 
 export default class CountryRequestDto {
   @IsString()
-  name: string;
+  @IsOptional()
+  name?: string;
 
   @IsString()
-  currencies: string[];
+  @IsOptional()
+  currencies?: string[];
 
   @IsBoolean()
   @IsOptional()
-  active: boolean;
+  active?: boolean;
 }
